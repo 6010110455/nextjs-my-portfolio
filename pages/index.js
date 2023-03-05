@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 import { AnimatePresence } from "framer-motion";
 
-import Banner from "@/components/banner";
+import Banner from "../components/banner";
 
 export default function Home() {
   return (
