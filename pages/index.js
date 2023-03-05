@@ -8,8 +8,6 @@ const inter = Inter({ subsets: ["latin"] });
 import { AnimatePresence } from "framer-motion";
 
 import Banner from "@/components/banner";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -47,9 +45,7 @@ export default function Home() {
       <AnimatePresence>
         <div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
           <div className="container mx-auto ">
-            <Navbar />
             <Banner />
-            <Footer />
           </div>
         </div>
       </AnimatePresence>
