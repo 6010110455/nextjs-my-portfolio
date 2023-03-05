@@ -1,9 +1,9 @@
-import "@/styles/globals.css";
+import "../styles/globals.css";
 
 import { ThemeProvider } from "next-themes";
 
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 export default function App({ Component, pageProps }) {
   return (
