@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import dynamic from "next/dynamic";
 import { FiMenu, FiMoon, FiSun, FiX } from "react-icons/fi";
 
 import Link from "next/link";
@@ -12,7 +13,7 @@ import { useTheme } from "next-themes";
 // import logoLight from "/images/logo-light.svg";
 // import logoDark from "/images/logo-dark.svg";
 
-export default function Navbar() {
+function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
@@ -213,3 +214,5 @@ export default function Navbar() {
     </motion.nav>
   );
 }
+
+export default dynamic(() => Promise.resolve(Navbar), { ssr: false });
