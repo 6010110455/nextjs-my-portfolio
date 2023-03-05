@@ -5,6 +5,10 @@ import styles from "@/styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+import Banner from "@/components/banner";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
 export default function Home() {
   return (
     <>
@@ -38,7 +42,11 @@ export default function Home() {
           content="2HSSIHsakNFao9y4Sywcx-siP9G1a1ccev9hdetKkak"
         />
       </Head>
-      <main></main>
+      <div className="container mx-auto">
+        <Navbar />
+        <Banner />
+        <Footer />
+      </div>
     </>
   );
 }
