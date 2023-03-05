@@ -19,6 +19,8 @@ function Navbar() {
 
   const { theme, setTheme } = useTheme("light");
 
+  console.log("theme", theme);
+
   function toggleMenu() {
     if (!showMenu) {
       setShowMenu(true);
@@ -57,7 +59,7 @@ function Navbar() {
                 THANACHIT
               </Link>
             ) : (
-              <Link href="/" className={`font-bold text-2xl text-white`}>
+              <Link href="/" className={`font-bold text-2xl text-black`}>
                 THANACHIT
               </Link>
             )}

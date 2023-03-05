@@ -5,6 +5,8 @@ import styles from "@/styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+import { AnimatePresence } from "framer-motion";
+
 import Banner from "@/components/banner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -42,11 +44,15 @@ export default function Home() {
           content="2HSSIHsakNFao9y4Sywcx-siP9G1a1ccev9hdetKkak"
         />
       </Head>
-      <div className="container mx-auto bg-white dark:bg-black">
-        <Navbar />
-        <Banner />
-        <Footer />
-      </div>
+      <AnimatePresence>
+        <div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
+          <div className="container mx-auto ">
+            <Navbar />
+            <Banner />
+            <Footer />
+          </div>
+        </div>
+      </AnimatePresence>
     </>
   );
 }
