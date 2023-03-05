@@ -42,7 +42,7 @@ export default function Home() {
           content="2HSSIHsakNFao9y4Sywcx-siP9G1a1ccev9hdetKkak"
         />
       </Head>
-      <div className="container mx-auto">
+      <div className="container mx-auto bg-white dark:bg-black">
         <Navbar />
         <Banner />
         <Footer />
